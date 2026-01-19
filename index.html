@@ -1,748 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mine..💗</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mine..💗</title>
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
 
-    body{
-      height:100vh;
-      background:linear-gradient(135deg,#ff4d6d,#ff8fa3);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      overflow:hidden;
-      color:#fff;
-    }
+body{
+  height:100vh;
+  background:linear-gradient(135deg,#ff4d6d,#ff8fa3);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+  overflow:hidden;
+}
 
-    .screen{
-      width:100%;
-      max-width:420px;
-      text-align:center;
-      animation: reelIn 1s ease;
-    }
+.container{
+  width:100%;
+  max-width:420px;
+  text-align:center;
+}
 
-    @keyframes reelIn{
-      from{
-        transform:translateY(80px) scale(0.9);
-        opacity:0;
-      }
-      to{
-        transform:translateY(0) scale(1);
-        opacity:1;
-      }
-    }
+/* animations */
+@keyframes slideUp{
+  from{opacity:0;transform:translateY(40px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes pulse{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.15)}
+  100%{transform:scale(1)}
+}
 
-    h1{
-      font-size:2.4rem;
-    }
-  </style>
+/* common */
+.section{
+  display:none;
+  animation:slideUp .9s ease forwards;
+}
+
+h1{
+  font-size:2.4rem;
+  margin-bottom:14px;
+}
+p{
+  font-size:1rem;
+  line-height:1.7;
+  margin-bottom:16px;
+}
+
+/* buttons */
+button{
+  padding:12px 26px;
+  border:none;
+  border-radius:30px;
+  font-size:1rem;
+  margin:8px;
+  cursor:pointer;
+}
+.yes{background:#fff;color:#ff4d6d}
+.no{background:rgba(255,255,255,.35);color:#fff}
+
+/* game */
+.heart{
+  font-size:3rem;
+  cursor:pointer;
+  animation:pulse 1s infinite;
+}
+
+/* promise */
+.promise{
+  font-size:1.2rem;
+  font-weight:600;
+  margin-top:40px;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="screen">
-    <h1>mine..💗</h1>
-  </div>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mine..💗</title>
-
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body{
-      height:100vh;
-      background:linear-gradient(135deg,#ff4d6d,#ff8fa3);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      overflow:hidden;
-      color:#fff;
-    }
-
-    .screen{
-      width:100%;
-      max-width:420px;
-      text-align:center;
-    }
-
-    .name{
-      animation: reelIn 1s ease;
-    }
-
-    .text{
-      opacity:0;
-      margin-top:18px;
-      font-size:1rem;
-      line-height:1.6;
-      animation: fadeUp 0.8s ease forwards;
-      animation-delay:1.4s;
-    }
-
-    @keyframes reelIn{
-      from{
-        transform:translateY(80px) scale(0.9);
-        opacity:0;
-      }
-      to{
-        transform:translateY(0) scale(1);
-        opacity:1;
-      }
-    }
-
-    @keyframes fadeUp{
-      from{
-        opacity:0;
-        transform:translateY(14px);
-      }
-      to{
-        opacity:1;
-        transform:translateY(0);
-      }
-    }
-
-    h1{
-      font-size:2.4rem;
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="screen">
-    <h1 class="name">mine..💗</h1>
-
-    <p class="text">
-      I don’t know when it happened…<br>
-      but somewhere between the laughs and the silence,<br>
-      you became my favorite thought.
-    </p>
-  </div>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mine..💗</title>
-
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:'Poppins',sans-serif;
-    }
-
-    body{
-      height:100vh;
-      background:linear-gradient(135deg,#ff4d6d,#ff8fa3);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      overflow:hidden;
-      color:#fff;
-    }
-
-    .screen{
-      width:100%;
-      max-width:420px;
-      text-align:center;
-    }
-
-    .name{
-      animation:reelIn 1s ease;
-    }
-
-    .text{
-      opacity:0;
-      margin-top:18px;
-      font-size:1rem;
-      line-height:1.6;
-      animation:fadeUp .8s ease forwards;
-      animation-delay:1.4s;
-    }
-
-    .question{
-      opacity:0;
-      margin-top:28px;
-      font-size:1.4rem;
-      font-weight:600;
-      animation:fadeUp .8s ease forwards;
-      animation-delay:3.4s;
-    }
-
-    @keyframes reelIn{
-      from{transform:translateY(80px) scale(.9);opacity:0}
-      to{transform:translateY(0) scale(1);opacity:1}
-    }
-
-    @keyframes fadeUp{
-      from{opacity:0;transform:translateY(14px)}
-      to{opacity:1;transform:translateY(0)}
-    }
-
-    h1{font-size:2.4rem}
-  </style>
-</head>
-
-<body>
-
-  <div class="screen">
-    <h1 class="name">mine..💗</h1>
-
-    <p class="text">
-      I don’t know when it happened…<br>
-      but somewhere between the laughs and the silence,<br>
-      you became my favorite thought.
-    </p>
-
-    <div class="question">
-      Will you be my Valentine? 💌
-    </div>
-  </div>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mine..💗</title>
-
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:'Poppins',sans-serif;
-    }
-
-    body{
-      height:100vh;
-      background:linear-gradient(135deg,#ff4d6d,#ff8fa3);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      overflow:hidden;
-      color:#fff;
-    }
-
-    .screen{
-      width:100%;
-      max-width:420px;
-      text-align:center;
-    }
-
-    .name{
-      animation:reelIn 1s ease;
-    }
-
-    .text{
-      opacity:0;
-      margin-top:18px;
-      font-size:1rem;
-      line-height:1.6;
-      animation:fadeUp .8s ease forwards;
-      animation-delay:1.4s;
-    }
-
-    .question{
-      opacity:0;
-      margin-top:28px;
-      font-size:1.4rem;
-      font-weight:600;
-      animation:fadeUp .8s ease forwards;
-      animation-delay:3.4s;
-    }
-
-    .buttons{
-      opacity:0;
-      margin-top:22px;
-      animation:fadeUp .8s ease forwards;
-      animation-delay:4.6s;
-    }
-
-    button{
-      padding:12px 26px;
-      border:none;
-      border-radius:30px;
-      font-size:1rem;
-      margin:8px;
-      cursor:pointer;
-    }
-
-    .yes{
-      background:#fff;
-      color:#ff4d6d;
-    }
-
-    .no{
-      background:rgba(255,255,255,.35);
-      color:#fff;
-    }
-
-    .msg{
-      margin-top:16px;
-      font-size:1.1rem;
-      min-height:24px;
-      animation:fadeUp .5s ease;
-    }
-
-    @keyframes reelIn{
-      from{transform:translateY(80px) scale(.9);opacity:0}
-      to{transform:translateY(0) scale(1);opacity:1}
-    }
-
-    @keyframes fadeUp{
-      from{opacity:0;transform:translateY(14px)}
-      to{opacity:1;transform:translateY(0)}
-    }
-
-    h1{font-size:2.4rem}
-  </style>
-</head>
-
-<body>
-
-  <div class="screen">
-    <h1 class="name">mine..💗</h1>
-
-    <p class="text">
-      I don’t know when it happened…<br>
-      but somewhere between the laughs and the silence,<br>
-      you became my favorite thought.
-    </p>
-
-    <div class="question">
-      Will you be my Valentine? 💌
-    </div>
-
-    <div class="buttons">
-      <button class="yes" onclick="yesClick()">YES 💖</button>
-      <button class="no" onclick="noClick()">NO 🙈</button>
-      <div id="msg" class="msg"></div>
-    </div>
-  </div>
-
-<script>
-  function noClick(){
-    document.getElementById('msg').innerText = "try again wiffyy..😩";
-  }
-
-  function yesClick(){
-    document.getElementById('msg').innerText = "";
-  }
-</script>
-
-</body>
-</html>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mine..💗</title>
-
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:'Poppins',sans-serif;
-    }
-
-    body{
-      height:100vh;
-      background:linear-gradient(135deg,#ff4d6d,#ff8fa3);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      overflow:hidden;
-      color:#fff;
-    }
-
-    .screen{
-      width:100%;
-      max-width:420px;
-      text-align:center;
-    }
-
-    .name{animation:reelIn 1s ease}
-
-    .text{
-      opacity:0;
-      margin-top:18px;
-      font-size:1rem;
-      line-height:1.6;
-      animation:fadeUp .8s ease forwards;
-      animation-delay:1.4s;
-    }
-
-    .question{
-      opacity:0;
-      margin-top:28px;
-      font-size:1.4rem;
-      font-weight:600;
-      animation:fadeUp .8s ease forwards;
-      animation-delay:3.4s;
-    }
-
-    .buttons{
-      opacity:0;
-      margin-top:22px;
-      animation:fadeUp .8s ease forwards;
-      animation-delay:4.6s;
-    }
-
-    button{
-      padding:12px 26px;
-      border:none;
-      border-radius:30px;
-      font-size:1rem;
-      margin:8px;
-      cursor:pointer;
-    }
-
-    .yes{background:#fff;color:#ff4d6d}
-    .no{background:rgba(255,255,255,.35);color:#fff}
-
-    .msg{
-      margin-top:16px;
-      font-size:1.1rem;
-      min-height:24px;
-    }
-
-    /* GAME */
-    .game{
-      display:none;
-      margin-top:28px;
-      animation:fadeUp .6s ease forwards;
-    }
-
-    .tap-heart{
-      font-size:3rem;
-      cursor:pointer;
-      animation:pulse 1s infinite;
-    }
-
-    .count{
-      margin-top:10px;
-      font-size:1rem;
-      opacity:.9;
-    }
-
-    @keyframes pulse{
-      0%{transform:scale(1)}
-      50%{transform:scale(1.15)}
-      100%{transform:scale(1)}
-    }
-
-    @keyframes reelIn{
-      from{transform:translateY(80px) scale(.9);opacity:0}
-      to{transform:translateY(0) scale(1);opacity:1}
-    }
-
-    @keyframes fadeUp{
-      from{opacity:0;transform:translateY(14px)}
-      to{opacity:1;transform:translateY(0)}
-    }
-
-    h1{font-size:2.4rem}
-  </style>
-</head>
-
-<body>
-
-<div class="screen">
-
-  <h1 class="name">mine..💗</h1>
-
-  <p class="text">
+<div class="container">
+
+<!-- STEP 1 -->
+<div id="s1" class="section">
+  <h1>mine..💗</h1>
+</div>
+
+<!-- STEP 2 -->
+<div id="s2" class="section">
+  <p>
     I don’t know when it happened…<br>
     but somewhere between the laughs and the silence,<br>
     you became my favorite thought.
   </p>
+</div>
 
-  <div class="question">
-    Will you be my Valentine? 💌
-  </div>
+<!-- STEP 3 -->
+<div id="s3" class="section">
+  <h1>Will you be my Valentine? 💌</h1>
+  <button class="yes" onclick="yes()">YES 💖</button>
+  <button class="no" onclick="no()">NO 🙈</button>
+  <p id="msg"></p>
+</div>
 
-  <div class="buttons">
-    <button class="yes" onclick="yesClick()">YES 💖</button>
-    <button class="no" onclick="noClick()">NO 🙈</button>
-    <div id="msg" class="msg"></div>
-  </div>
+<!-- STEP 4 GAME -->
+<div id="s4" class="section">
+  <p>Tap the heart 💗</p>
+  <div class="heart" onclick="tap()">❤️</div>
+  <p><span id="count">0</span> / 7</p>
+</div>
 
-  <!-- GAME -->
-  <div id="game" class="game">
-    <p>Tap the heart 💗</p>
-    <div class="tap-heart" onclick="tap()">❤️</div>
-    <div class="count">
-      Taps: <span id="taps">0</span> / 7
-    </div>
-  </div>
+<!-- STEP 5 LETTER -->
+<div id="s5" class="section">
+  <p>I don’t know when you stopped being just a person<br>
+  and became the place my heart feels safest.</p>
+
+  <p>Somewhere between the late thoughts and quiet moments,<br>
+  you became the one I look for in everything.</p>
+
+  <p>Your presence calms the storms in me,<br>
+  and your absence is the only thing that feels loud.</p>
+
+  <p>No matter how hard life gets,<br>
+  my heart will always find its way back to you.</p>
+
+  <p><b>Always yours,<br>mine..💗</b></p>
+</div>
+
+<!-- STEP 6 FINAL PROMISE -->
+<div id="s6" class="section promise">
+  I choose you —<br>
+  today, tomorrow,<br>
+  and in every version of forever. 💗
+</div>
 
 </div>
 
 <script>
-  let taps = 0;
+let taps = 0;
 
-  function noClick(){
-    document.getElementById('msg').innerText = "try again wiffyy..😩";
+/* auto flow */
+setTimeout(()=>show("s1"),300);
+setTimeout(()=>show("s2"),1800);
+setTimeout(()=>show("s3"),3600);
+
+function show(id){
+  document.getElementById(id).style.display="block";
+}
+
+function no(){
+  document.getElementById("msg").innerText="try again wiffyy..😩";
+}
+
+function yes(){
+  document.getElementById("msg").innerText="";
+  show("s4");
+}
+
+function tap(){
+  taps++;
+  document.getElementById("count").innerText=taps;
+  if(taps===7){
+    document.getElementById("s4").style.display="none";
+    show("s5");
+    setTimeout(()=>show("s6"),3500);
   }
-
-  function yesClick(){
-    document.getElementById('msg').innerText = "";
-    document.getElementById('game').style.display = "block";
-  }
-
-  function tap(){
-    taps++;
-    document.getElementById('taps').innerText = taps;
-
-    if(taps === 7){
-      document.getElementById('game').innerHTML =
-        "<p>💗 You did it 💗</p>";
-    }
-  }
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mine..💗</title>
-
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:'Poppins',sans-serif;
-    }
-
-    body{
-      height:100vh;
-      background:linear-gradient(135deg,#ff4d6d,#ff8fa3);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      overflow:hidden;
-      color:#fff;
-    }
-
-    .screen{
-      width:100%;
-      max-width:420px;
-      text-align:center;
-    }
-
-    .name{animation:reelIn 1s ease}
-
-    .text{
-      opacity:0;
-      margin-top:18px;
-      font-size:1rem;
-      line-height:1.6;
-      animation:fadeUp .8s ease forwards;
-      animation-delay:1.4s;
-    }
-
-    .question{
-      opacity:0;
-      margin-top:28px;
-      font-size:1.4rem;
-      font-weight:600;
-      animation:fadeUp .8s ease forwards;
-      animation-delay:3.4s;
-    }
-
-    .buttons{
-      opacity:0;
-      margin-top:22px;
-      animation:fadeUp .8s ease forwards;
-      animation-delay:4.6s;
-    }
-
-    button{
-      padding:12px 26px;
-      border:none;
-      border-radius:30px;
-      font-size:1rem;
-      margin:8px;
-      cursor:pointer;
-    }
-
-    .yes{background:#fff;color:#ff4d6d}
-    .no{background:rgba(255,255,255,.35);color:#fff}
-
-    .msg{
-      margin-top:16px;
-      font-size:1.1rem;
-      min-height:24px;
-    }
-
-    /* GAME */
-    .game{
-      display:none;
-      margin-top:28px;
-      animation:fadeUp .6s ease forwards;
-    }
-
-    .tap-heart{
-      font-size:3rem;
-      cursor:pointer;
-      animation:pulse 1s infinite;
-    }
-
-    .count{
-      margin-top:10px;
-      font-size:1rem;
-      opacity:.9;
-    }
-
-    /* LETTER */
-    .letter{
-      display:none;
-      margin-top:26px;
-      font-size:1rem;
-      line-height:1.7;
-      animation:fadeUp 1s ease forwards;
-    }
-
-    @keyframes pulse{
-      0%{transform:scale(1)}
-      50%{transform:scale(1.15)}
-      100%{transform:scale(1)}
-    }
-
-    @keyframes reelIn{
-      from{transform:translateY(80px) scale(.9);opacity:0}
-      to{transform:translateY(0) scale(1);opacity:1}
-    }
-
-    @keyframes fadeUp{
-      from{opacity:0;transform:translateY(14px)}
-      to{opacity:1;transform:translateY(0)}
-    }
-
-    h1{font-size:2.4rem}
-  </style>
-</head>
-
-<body>
-
-<div class="screen">
-
-  <h1 class="name">mine..💗</h1>
-
-  <p class="text">
-    I don’t know when it happened…<br>
-    but somewhere between the laughs and the silence,<br>
-    you became my favorite thought.
-  </p>
-
-  <div class="question">
-    Will you be my Valentine? 💌
-  </div>
-
-  <div class="buttons">
-    <button class="yes" onclick="yesClick()">YES 💖</button>
-    <button class="no" onclick="noClick()">NO 🙈</button>
-    <div id="msg" class="msg"></div>
-  </div>
-
-  <!-- GAME -->
-  <div id="game" class="game">
-    <p>Tap the heart 💗</p>
-    <div class="tap-heart" onclick="tap()">❤️</div>
-    <div class="count">
-      Taps: <span id="taps">0</span> / 7
-    </div>
-  </div>
-
-  <!-- LETTER -->
-  <div id="letter" class="letter">
-    <p>
-      I don’t know when you stopped being just a person<br>
-      and became the place my heart feels safest.
-    </p>
-    <p>
-      Somewhere between the late thoughts and quiet moments,<br>
-      you became the one I look for in everything.
-    </p>
-    <p>
-      Your presence calms the storms in me,<br>
-      and your absence is the only thing that feels loud.
-    </p>
-    <p>
-      I may not be perfect,<br>
-      but my love for you is honest, deep, and real.
-    </p>
-    <p>
-      In a world that constantly changes,<br>
-      choosing you is the only thing that feels certain.
-    </p>
-    <p>
-      No matter how hard life gets,<br>
-      no matter how far we go,<br>
-      my heart will always find its way back to you.
-    </p>
-    <p>
-      Always yours — in every lifetime,<br>
-      <b>mine..💗</b>
-    </p>
-  </div>
-
-</div>
-
-<script>
-  let taps = 0;
-
-  function noClick(){
-    document.getElementById('msg').innerText = "try again wiffyy..😩";
-  }
-
-  function yesClick(){
-    document.getElementById('msg').innerText = "";
-    document.getElementById('game').style.display = "block";
-  }
-
-  function tap(){
-    taps++;
-    document.getElementById('taps').innerText = taps;
-
-    if(taps === 7){
-      document.getElementById('game').style.display = "none";
-      document.getElementById('letter').style.display = "block";
-    }
-  }
+}
 </script>
 
 </body>

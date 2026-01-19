@@ -141,3 +141,88 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mine..💗</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      height:100vh;
+      background:linear-gradient(135deg,#ff4d6d,#ff8fa3);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      color:#fff;
+    }
+
+    .screen{
+      width:100%;
+      max-width:420px;
+      text-align:center;
+    }
+
+    .name{
+      animation:reelIn 1s ease;
+    }
+
+    .text{
+      opacity:0;
+      margin-top:18px;
+      font-size:1rem;
+      line-height:1.6;
+      animation:fadeUp .8s ease forwards;
+      animation-delay:1.4s;
+    }
+
+    .question{
+      opacity:0;
+      margin-top:28px;
+      font-size:1.4rem;
+      font-weight:600;
+      animation:fadeUp .8s ease forwards;
+      animation-delay:3.4s;
+    }
+
+    @keyframes reelIn{
+      from{transform:translateY(80px) scale(.9);opacity:0}
+      to{transform:translateY(0) scale(1);opacity:1}
+    }
+
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(14px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    h1{font-size:2.4rem}
+  </style>
+</head>
+
+<body>
+
+  <div class="screen">
+    <h1 class="name">mine..💗</h1>
+
+    <p class="text">
+      I don’t know when it happened…<br>
+      but somewhere between the laughs and the silence,<br>
+      you became my favorite thought.
+    </p>
+
+    <div class="question">
+      Will you be my Valentine? 💌
+    </div>
+  </div>
+
+</body>
+</html>
